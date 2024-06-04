@@ -35,6 +35,10 @@ namespace Parcial1.Models
                     .HasMaxLength(100)
                     .IsUnicode(false);
 
+                entity.Property(e => e.Mail)
+                  .HasMaxLength(100)
+                  .IsUnicode(false);
+
                 entity.Property(e => e.Clave)
                     .HasMaxLength(100)
                     .IsUnicode(false);
@@ -44,6 +48,8 @@ namespace Parcial1.Models
                 entity.Property(e => e.Nombre)
                     .HasMaxLength(50)
                     .IsUnicode(false);
+
+
             });
 
             OnModelCreatingPartial(modelBuilder);

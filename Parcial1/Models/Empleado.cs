@@ -10,5 +10,6 @@ namespace Parcial1.Models
         public string? Apellido { get; set; }
         public DateTime? FechaIngreso { get; set; }
         public string? Clave { get; set; }
+        public string? Mail { get; set; }
     }
 }
